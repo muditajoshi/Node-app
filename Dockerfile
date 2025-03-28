@@ -7,9 +7,6 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy the rest of the application and build
-COPY . .
-RUN npm run build
 
 # Copy the build output from the previous stage
 COPY . .
