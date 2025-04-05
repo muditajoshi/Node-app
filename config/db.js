@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const chalk = require("chalk");
 const dotenv = require("dotenv");
 
 const connectDB = async () => {
