@@ -15,3 +15,10 @@ exports.createPost = async (data) => {
   return await Post.create(data);
 };
 
+exports.updatePost = async (id, data) => {
+  return await Post.findByIdAndUpdate(id, data, { new: true });
+};
+exports.deletePost = async (id) => {
+  return await Post.findByIdAndDelete(id);
+};
+

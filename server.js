@@ -3,9 +3,10 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
-const postRoutes = require("./post/routes/postRoute");
+const postRoutes = require("./config/postRoute.js");
 const connectDB = require("./config/db.js");
 const dotenv = require("dotenv");
+
 
 dotenv.config();
 connectDB();
