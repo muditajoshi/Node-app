@@ -7,7 +7,6 @@ services:
       ports: 
         - "5001:5001"
       environment:
-        - NODE_ENV=production
         - MONGODB_URI=mongodb+srv://mongodb:Password@cluster0.licrmcj.mongodb.net/Blog?retryWrites=true&w=majority&appName=Cluster0
         - NODE_ENV=prod
         - PORT=5000
