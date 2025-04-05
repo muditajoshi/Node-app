@@ -1,0 +1,13 @@
+version: "0.0.1"
+services:
+    web :
+      build:
+        context : .
+      image: node-app:${IMAGE_TAG}
+      ports: 
+        - "5001:5001"
+      environment:
+        - NODE_ENV=production
+      restart: always
+
+
