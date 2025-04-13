@@ -9,7 +9,9 @@ const dotenv = require("dotenv");
 
 
 dotenv.config();
+if (process.env.NODE_ENV !== 'test') {
 connectDB();
+}
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());

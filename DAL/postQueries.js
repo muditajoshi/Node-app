@@ -1,4 +1,4 @@
-const Post = require("../model/postModel");
+const Post = require("../post/model/postModel");
 
 // Get All Posts
 exports.getAllPosts = async () => {
@@ -6,7 +6,7 @@ exports.getAllPosts = async () => {
 };
 
 // Get Single Post by ID
-exports.getPostsById = async (id) => {
+exports.getPostById = async (id) => {
   return await Post.findById(id);
 };
 
